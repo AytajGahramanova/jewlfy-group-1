@@ -1,0 +1,69 @@
+:root{
+    --main-color:#D4AF37;
+    --bg-color:#FEF2E8;
+    --bg--color-soft:#FEFAF5;
+    --bg-stroke-color:#F3DCCE;
+    --bg-black-color:#202020;
+    --black-soft:#6B6B6B;
+    --black-bg-white-text-color:#FFFFFF;
+    --black-bg-white-text-soft:#A7A7A7;
+    --hot-price-color:#DC3545;
+    --input-form-bg-color:#FAFAFA
+}
+
+
+.gm__shop-header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  
+  
+  background-image: url(/assets/page_header_bg.jpg); 
+  background-color: #f7f4ee; 
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  
+  .gm__shop-header_container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+ 
+  .gm__shop-header_title {
+    font-family: 'Georgia', serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 8px;
+  }
+
+ 
+  .gm__shop-header_breadcrumbs {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    color: #707070;
+    letter-spacing: 0.5px;
+  }
+
+
+  .gm__home {
+    color: #707070;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    
+    &:hover {
+      color: #1c1c1c;
+    }
+  }
+
+  
+  .gm__myaccount {
+    color: #8a8a8a;
+  }
+}
