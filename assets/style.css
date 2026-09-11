@@ -1,17 +1,5 @@
-:root{
-    --main-color:#D4AF37;
-    --bg-color:#FEF2E8;
-    --bg--color-soft:#FEFAF5;
-    --bg-stroke-color:#F3DCCE;
-    --bg-black-color:#202020;
-    --black-soft:#6B6B6B;
-    --black-bg-white-text-color:#FFFFFF;
-    --black-bg-white-text-soft:#A7A7A7;
-    --hot-price-color:#DC3545;
-    --input-form-bg-color:#FAFAFA
-}
 
-
+/* header section */
 .gm__shop-header {
   width: 100%;
   height: 200px;
@@ -67,3 +55,160 @@
     color: #8a8a8a;
   }
 }
+/* Login Section */
+.gm__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+
+  .gm__login-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+
+    .gm__login-banner {
+      flex: 1;
+
+      .gm__login-banner-img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        object-fit: cover;
+      }
+    }
+
+    .gm__login-form-wrapper {
+      flex: 1;
+      max-width: 400px;
+
+      .gm__login-title {
+        font-size: 28px;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 6px;
+      }
+
+      .gm__login-subtitle {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 25px;
+      }
+
+      .gm__login-form {
+        .gm__form-group {
+          margin-bottom: 18px;
+
+          .gm__form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+          }
+
+          .gm__form-input {
+            width: 100%;
+            padding: 10px 12px;
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            font-size: 13px;
+            outline: none;
+
+            &::placeholder {
+              color: #ccc;
+            }
+          }
+        }
+
+        .gm__form-options {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12px;
+          color: #666;
+          margin-bottom: 20px;
+
+          .gm__form-checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+          }
+
+          .gm__forgot-password-link {
+            color: #666;
+            text-decoration: underline;
+          }
+        }
+
+        .gm__login-submit-btn {
+          width: auto;
+          padding: 10px 24px;
+          background-color: #222;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          font-size: 13px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #000;
+          }
+        }
+      }
+
+      .gm__social-divider {
+        text-align: center;
+        font-size: 11px;
+        color: #888;
+        margin: 25px 0 15px;
+      }
+
+      .gm__social-login-list {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 30px;
+
+        .gm__social-login-btn {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 1px solid #eee;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          color: #333;
+          font-size: 14px;
+        }
+      }
+
+      .gm__register-prompt {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 8px;
+
+        .gm__register-link {
+          color: #c5a059;
+          text-decoration: underline;
+          font-weight: 500;
+        }
+      }
+
+      .gm__security-note {
+        font-size: 10px;
+        color: #aaa;
+      }
+    }
+  }
+}
+
+
+
+

@@ -3,10 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    Register page - Gamar
+    <!-- Header / Breadcrumb Section -->
+    <section class="gm__shop-header">
+      <div class="gm__shop-header_container">
+        <h1 class="gm__shop-header_title">Create Account</h1>
+        <nav class="gm__shop-header_breadcrumbs">
+          <a class="gm__home" href="#">Home</a>
+          <span class="gm__myaccount">/ My Account</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Register Section -->
+    <section class="gm__register">
+      <div class="gm__register-container">
+        <div class="gm__login-banner">
+          <img
+            src="assets/login-img.jpg"
+            alt="jewelry model"
+            class="gm__login-banner-img"
+          />
+        </div>
+        <div class="gm__register-form-wrapper">
+          <h2 class="gm__register-title">Create Account</h2>
+          <p class="gm__register-subtitle">Join Us for a Beautiful Jewelry Journey</p>
+          
+          <!-- Əlavə olunan Form daxili strukturu -->
+          <form action="#" method="POST" class="gm__register-form">
+            
+            <div class="gm__form-group">
+              <label class="gm__form-label" for="username_name">Your Name</label>
+              <input type="text" id="username_name" class="gm__form-input" placeholder="Enter your name" required />
+            </div>
+
+            <div class="gm__form-group">
+              <label class="gm__form-label" for="username_field">Username</label>
+              <input type="text" id="username_field" class="gm__form-input" placeholder="Enter your username" required />
+            </div>
+
+            <div class="gm__form-group">
+              <label class="gm__form-label" for="email_field">Your email address <span class="gm__required">*</span></label>
+              <input type="email" id="email_field" class="gm__form-input" placeholder="Enter your name or address" required />
+            </div>
+
+            <div class="gm__form-group">
+              <label class="gm__form-label" for="password_field">Password <span class="gm__required">*</span></label>
+              <input type="password" id="password_field" class="gm__form-input" placeholder="Enter your password" required />
+            </div>
+
+            <button type="submit" class="gm__form-btn">Sign Up</button>
+
+            <div class="gm__form-footer">
+              <p class="gm__form-footer-text">
+                Already have an account? <a href="#" class="gm__form-link">Log In</a>
+              </p>
+              <span class="gm__form-note">Your data will protected & encrypted</span>
+            </div>
+
+          </form>
+          <!-- Form sonu -->
+          
+        </div>
+      </div>
+    </section>
   </body>
 </html>
