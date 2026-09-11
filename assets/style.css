@@ -1,4 +1,298 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about-headcard{
+    background-image: url("https://html.laralink.com/jewlfy/assets/img/page_header_bg.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about-headtextbox{
+    position: relative;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    top: 23%;
+    gap: 20px;
+}
+
+.about-headtextbox h1{
+     font-family: Playfair Display;
+     font-size: 48px;
+     color: #2C2C2C;
+}
+
+.about-altbox{
+    font-family: Inter;
+}
+
+.about-altbox a{
+    color: #2C2C2C;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+.about-altbox span{
+    color: #6B6B6B;
+   font-size: 18px;
+   font-family: Inter;
+}
+
+
+
+
+.about-twosection{
+    position: relative;
+    top: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    left: 2%;
+    display: flex;
+}
+
+.about-twoimage{
+    width: 600px;
+    height: 650px;
+    border: 1px solid #F0E3D8;
+    z-index: 1;
+    /* position: absolute; */
+}
+
+.about-twoimage img{
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+}
+
+.about-righttxtbox p{
+    color: #C4A852;
+    font-family: Inter;
+}
+
+.about-righttxtbox h2{
+    color: #2C2C2C;
+    font-family: Playfair Display;
+    font-size: 36px;
+}
+
+.about-righttxtbox2 p{
+    color: #6B6B6B;
+    font-size: 16px;
+    font-family: Inter;
+    width: 75%;
+    span{
+        color: #2C2C2C;
+    }
+}
+
+.about-righttxtbox2 button{
+    color: #2C2C2C;
+    font-size: 16px;
+    font-family: Inter;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 8%;
+    right: 30%;
+    font-weight: 550;
+}
+
+.about-righttxtbox2{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-icontext h3{
+    font-size: 22px;
+    color: #2C2C2C;
+    font-weight: 500;
+    font-family: Playfair Display;
+}
+
+.about-icontext p{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.about-firstbox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-twobox{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+.about-imgbox{
+    display: flex;
+    background-color: #FAFAFA;
+    width: 900px;
+    position: absolute;
+    z-index: 9;
+    left: 35%;
+    margin-top: 20px;
+    
+}
+
+.about-righttxtbox{
+    position: relative;
+    left: 22%;
+   
+}
+
+.about-downbox{
+    position: relative;
+    top: 48%;
+    left: 35%;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-righttxtbox h2{
+    width: 69%;
+}
+
+.about-brildiv{
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.about-headtwotext h2{
+    font-size: 36px;
+    font-family: Playfair Display;
+    color: #2C2C2C;
+}
+
+.about-onetextcard h3{
+    color: #2C2C2C;
+    font-family: Playfair Display;
+    font-size: 21px;
+}
+
+.about-yellowtext{
+    color: #D4AF37;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.about-graytext{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 16px;
+    width: 83%;
+}
+
+.about-onetextcard{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-threesection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+}
+
+.about-threeimagecard{
+    display: flex;
+    position: relative;
+    left: 6%;
+    top: 30px;
+}
+
+.about-twoiconboxes i{
+  display: none;
+    
+}
+
+.about-twoiconboxes{
+   display: none;
+}
+
+.about-oneimgcard:hover{
+
+  .about-oneimg{
+    transform: scale(1.03);
+    transition: .3s;
+  }
+
+.about-twoiconboxes{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: 155px;
+    left: 20%;
+    transition: .3s;
+}
+
+    .about-twoiconboxes i{
+
+    transition: .3s;
+           font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #2C2C2C;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    }
+}
+:root{
+    --main-color:#D4AF37;
+    --bg-color:#FEF2E8;
+    --bg--color-soft:#FEFAF5;
+    --bg-stroke-color:#F3DCCE;
+    --bg-black-color:#202020;
+    --black-soft:#6B6B6B;
+    --black-bg-white-text-color:#FFFFFF;
+    --black-bg-white-text-soft:#A7A7A7;
+    --hot-price-color:#DC3545;
+    --input-form-bg-color:#FAFAFA
+}
+
+
 /* header section */
 .gm__shop-header {
   width: 100%;
