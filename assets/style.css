@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-color: #D4AF37;
+    --bg-color: #FEF2E8;
+    --bg--color-soft: #FEFAF5;
+    --bg-stroke-color: #F3DCCE;
+    --bg-black-color: #202020;
+    --black-soft: #6B6B6B;
+    --black-bg-white-text-color: #FFFFFF;
+    --black-bg-white-text-soft: #A7A7A7;
+    --hot-price-color: #DC3545;
+    --input-form-bg-color: #FAFAFA
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.el__background__img {
+    background-image: url(/assets/img/page_header_bg.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .el__background__span{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+
+
+    .el__title1 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .el__title2 {
+        font-size: 18px;
+        line-height: 26px;
+        color: rgb(107, 107, 107);
+    }
+}
+
+
+.el__card__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+
+    .product__img{
+        width: 424px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .el__card__span{
+        margin-top: 20px;   
+    }
+
+    .el__card__span1{
+        font-size: 14px;
+        color: rgb(107, 107, 107);
+        font-family: Inter;
+        line-height: 22px;
+    }
+
+    .el__card__span2{
+        font-size: 14px;
+        color: rgb(107, 107, 107);
+        font-family: Inter;
+        line-height: 22px;
+        margin-left: 10px;
+    }
+
+    #icon{
+        color: rgb(212, 175, 55);
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .el__card__p1{
+        font-family: Playfair Display;
+        font-size: 22px;
+        color: rgb(44, 44, 44);
+        line-height: 29.92px;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 430px;
+        cursor: pointer;
+    }
+
+    .el__card__button{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;  
+        line-height: 24px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
