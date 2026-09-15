@@ -279,3 +279,262 @@
     flex-direction: row;
     }
 }
+
+.about-fouronebox{
+    display: flex;
+}
+
+.about-fourtext h2{
+    font-size: 36px;
+    font-family: Playfair Display;
+    color: #2C2C2C;
+    
+}
+
+.about-fourtext p{
+    font-size: 16px;
+    font-family: Inter;
+    color: #6B6B6B;
+    width: 69%;
+    position: relative;
+   
+    top: 20px;
+}
+
+.about-fourtextbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-foursection{
+    position: relative;
+    top: 300px;
+    left: 6%;
+}
+
+.about-fournumberbox{
+    display: flex;
+    gap: 30px;
+    background-color: #FAFAF5;
+    width: 562px;
+    height: 101px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.about-fournumberdiv span{
+    font-size: 28px;
+    font-family: Playfair Display;
+    color: #2C2C2C;
+    font-weight: 600;
+    position: relative;
+    bottom: 4px;
+}
+
+.about-fournumberdiv p{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 14px ;
+}
+
+.about-fourtwodiv{
+    width: 264px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #FAFAFA;
+}
+
+.about-fourtwobox{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    top: 50px;
+   
+}
+
+.about-fourtwodiv h3{
+    color: #2C2C2C;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    bottom: 12px;
+    left: 18px;
+}
+
+.about-fourtwodiv p{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 1.43em;
+    width: 90%;
+    position: relative;
+    left: 18px;
+}
+
+.about-fourtwodiv2{
+    width: 269px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #FAFAFA;
+}
+
+.about-fourtwodiv2 h3{
+    color: #2C2C2C;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    bottom: 19px;
+    left: 18px;
+    
+}
+
+.about-fourtwodiv2 p{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 1.43em;
+    width: 90%;
+    position: relative;
+    left: 18px;
+}
+
+
+.about-fivesection {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  top: 390px;
+}
+
+.about-fivesection h2 {
+font-size: 36px;
+    font-family: Playfair Display;
+    color: #2C2C2C;
+  /* margin-bottom: 20px; */
+  line-height: 1.25em;
+  font-weight: 600;
+}
+
+.about-quote-mark {
+  img{
+    width: 170px;
+  }
+}
+.about-fivesection{
+.about-review-text {
+  max-width: 650px;
+  margin: 0 auto 24px;
+  font-size: 20px;
+  line-height: 1.35em;
+  font-weight: 400;
+  color: #2C2C2C;
+  font-family: Inter;
+}
+}
+
+
+.about-review-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.about-review-name p{
+    color: #2C2C2C;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.about-nav-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about-nav-btns button {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #e8c9c0;
+  background: #FFFFFF;
+  color: #2C2C2C;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.about-nav-btns button:hover { background: #f7ece8; }
+
+.about-photo {
+  position: absolute;
+  top: 90px;
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  border: 8px solid #fff;
+  outline: 1px solid #e6d9d2;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.about-photo-left {
+  left: -40px;
+  transform: rotate(20deg);
+}
+
+.about-photo-right {
+  right: -40px;
+  transform: rotate(-17deg);
+}
+
+.aboutsixtext h2 span{
+    color: #D4AF37;
+    
+}
+
+.aboutsixtext h2{
+    color: #2C2C2C;
+    font-family: Playfair Display;
+    font-size: 36px;
+}
+
+.about-sixyellowtext .about-yeltext{
+    color: #D4AF37;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+   line-height: 1.2em;
+}
+
+.about-sixyellowtext{
+display: flex;
+flex-direction: column;
+}
+
+.about-sixyellowtext .about-grtext{
+    color: #6B6B6B;
+    font-size: 14px;
+    font-family: Inter;
+    line-height: 1.43em;
+}
+
+.about-sixitdiv{
+    display: flex;
+    gap: 70px;
+}
+
+.about-sixsection{
+    position: relative;
+    top: 450px;
+    display: flex;
+    left: 6%;
+}
