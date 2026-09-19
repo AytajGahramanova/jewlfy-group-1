@@ -15,6 +15,12 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+    height: 10vh;
+
+}
+
 
 .about-headcard{
     background-image: url("https://html.laralink.com/jewlfy/assets/img/page_header_bg.jpg");
@@ -460,20 +466,43 @@ font-size: 36px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  align-items: center;
 }
 
 .about-nav-btns button {
   width: 50px;
   height: 50px;
-  border-radius: 3px;
-  border: 1px solid #e8c9c0;
+  border-radius: 2px;
+  border: 2px solid #F0E3D8;
   background: #FFFFFF;
   color: #2C2C2C;
   font-size: 36px;
   cursor: pointer;
 }
+ 
+.about-nav-btns .line{
+    height: 1px;
+    width: 250px;
+    background-color:#F0E3D8 ;
+    position: relative;
+    right: 30px;
 
-.about-nav-btns button:hover { background: #f7ece8; }
+}
+
+.about-nav-btns .line2{
+      height: 1px;
+    width: 250px;
+    background-color:#F0E3D8 ;
+    position: relative;
+    left: 30px;
+}
+
+.about-nav-btns button:hover{
+    background-color: #C4A852;
+    transition: .3s;
+    color: white;
+    border: none;
+}
 
 .about-photo {
   position: absolute;
@@ -505,6 +534,10 @@ font-size: 36px;
     color: #2C2C2C;
     font-family: Playfair Display;
     font-size: 36px;
+    position: relative;
+    left: 200px;
+    bottom: 14px;
+    font-weight: 600
 }
 
 .about-sixyellowtext .about-yeltext{
@@ -537,4 +570,192 @@ flex-direction: column;
     top: 450px;
     display: flex;
     left: 6%;
+}
+
+.about-siximg3{
+    position: relative;
+    left: 83%;
+    bottom: 439px;
+    z-index: 1;
+}
+
+.about-siximgdiv2{
+    position: absolute;
+    left: 66%;
+    bottom: 44%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.about-siximg4{
+    position: relative;
+    left: 220px;
+}
+
+.about-siximg5{
+    position: relative;
+    left: 110px;
+}
+
+.insticon, .insticon2, .insticon3, .insticon4, .insticon5, .insticon6{
+    display: none;
+    z-index: 9;
+
+}
+
+.about-siximg3:hover{
+    cursor: pointer;
+    .insticon3{
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 536px;
+        bottom: 8px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 545px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
+}
+
+.about-siximg2:hover{
+    cursor: pointer;
+    .insticon{
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 170px;
+        bottom: 552px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 130px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
+}
+
+.about-siximgdiv:hover{
+    overflow: hidden;
+    cursor: pointer;
+    .insticon2{
+        overflow: hidden;
+        /* transform: scale(1.05); */
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 420px;
+        bottom: 686px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 248px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
+}
+
+.about-siximg6:hover{
+    cursor: pointer;
+    .insticon6{
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 312px;
+        bottom: 8px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 247px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
+}
+
+
+.about-siximg5:hover{
+    cursor: pointer;
+    .insticon5{
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 200px;
+        bottom: 5px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 150px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
+}
+
+
+.about-siximg4:hover{
+    cursor: pointer;
+    .insticon4{
+        display: flex;
+        position: absolute;
+        z-index: 9;
+        width: 88px;
+        bottom: 5px;
+        transition: .5s;
+        opacity: 0.4;
+        height: 98px;
+        background-color: #2C2C2C;
+        color: white;
+        transition: .2s;
+        align-items: center;
+        justify-content: center;
+
+        i{
+font-size: 24px;
+font-weight: 900;
+opacity: 1;
+        }
+    }
 }
