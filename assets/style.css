@@ -21,14 +21,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* headerstart */
+
+.rg-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
 .rg-header-section1 {
     background-color: #292929;
     height: 42px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .rg-header-section1__container {
-        max-width: 1320px;
-        height: 100%;
+        max-width: 1720px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -105,7 +117,7 @@ body {
     .rg-header-section1__icon i,
     .item i,
     .item span {
-        color: var(--black-bg-white-text-color);
+        color: white;
         transition: color 0.3s ease;
     }
 
@@ -123,5 +135,1946 @@ body {
     .rg-header-section1__right__item__dropdown select option {
         color: black;
         background-color: white;
+    }
+}
+
+.rg-header-section2 {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+
+    .rg-header-section2__container {
+        width: 90%;
+        max-width: 1720px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+
+        .rg-header-section2__search {
+            width: 290px;
+            position: relative;
+        }
+
+        input {
+            margin-left: 30px;
+            width: 100%;
+            height: 46px;
+            border: none;
+            border-bottom: 1px solid #eee;
+            outline: none;
+            padding-right: 35px;
+            font-size: 8px;
+            color: #333;
+        }
+
+        input::placeholder {
+            color: #555;
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            cursor: pointer;
+
+            i {
+                font-size: 8px;
+                color: #111;
+                transition: 0.3s;
+            }
+
+            &:hover i {
+                color: #d4a72c;
+            }
+
+        }
+
+        .rg-header-section2__logo img {
+            width: 95px;
+            display: block;
+        }
+
+        .rg-header-section2__right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 22px;
+            margin-right: 30px;
+
+            .item {
+                position: relative;
+                width: 25px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                i {
+                    font-size: 16px;
+                    color: #111;
+                    transition: color 0.3s ease;
+                }
+
+                &:hover i {
+                    color: #d4a72c;
+                }
+
+            }
+
+            .badge {
+                position: absolute;
+                top: -4px;
+                right: -5px;
+                width: 15px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #d4a72c;
+                color: white;
+                border-radius: 50%;
+                font-size: 9px;
+            }
+        }
+
+    }
+}
+
+.rg-header-section3 {
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    border-top: 1px solid var(--bg-stroke-color);
+    border-bottom: 1px solid var(--bg-stroke-color);
+
+    .rg-header-section3__container {
+        width: 90%;
+        max-width: 1720px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .rg-header-section3__email,
+    .rg-header-section3__phone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+
+        span {
+
+            margin-left: 25px;
+            color: var(--main-color);
+            font-size: 12px;
+        }
+
+        a {
+            color: #555;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+
+    .rg-header-section3__nav ul {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        list-style: none;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #111;
+            font-size: 16px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    }
+
+    .rg-header-section3__nav a:hover {
+        color: var(--main-color);
+    }
+
+    .rg-header-section3__nav a.active {
+        color: var(--main-color);
+    }
+
+    .rg-header-section3__nav i {
+        font-size: 10px;
+    }
+
+}
+
+/* headerend */
+
+/* main start*/
+.rg-hero-section1 {
+    width: 100%;
+    min-height: 520px;
+    background-image: url("/assets/images/rg-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+
+
+    .rg-hero-section1__container {
+        width: 90%;
+        max-width: 1720px;
+        min-height: 520px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .rg-hero-section1__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .rg-hero-section1__badge {
+        display: inline-block;
+        padding: 6px 18px;
+        color: var(--main-color);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    .rg-hero-section1__title {
+        margin-left: 20px;
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--bg-black-color);
+    }
+
+    .rg-hero-section1__text {
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--black-soft);
+        max-width: 420px;
+    }
+
+    .rg-hero-section1__btn {
+        margin-top: 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 30px;
+        background-color: var(--bg-black-color);
+        color: var(--black-bg-white-text-color);
+        font-size: 10px;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: 0.3s ease;
+
+        i {
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            background-color: var(--main-color);
+            color: var(--bg-black-color);
+        }
+
+        &:hover i {
+            transform: translateX(4px);
+        }
+    }
+
+
+}
+
+
+.rg-features {
+    width: 100%;
+    padding: 55px 0;
+    background-color: #fff;
+
+    .rg-container {
+        max-width: 1330px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .rg-feature {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .rg-icon {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        background-color: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #dca900;
+
+        svg {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+
+    .rg-content h3 {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .rg-content p {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #777;
+    }
+}
+
+.rg-essence {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .rg-essence-subtitle {
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+        color: #c79d2b;
+    }
+
+    .rg-essence-title {
+        max-width: 1050px;
+        margin: 0;
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 1.25;
+        color: #2f2f2f;
+    }
+
+    .rg-essence-link {
+        position: relative;
+        margin-top: 45px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: #2f2f2f;
+        transition: 0.3s;
+    }
+
+    .rg-essence-link:hover {
+        color: #c79d2b;
+    }
+
+
+    .rg-essence-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 1px;
+        background: #c79d2b;
+        transition: 0.3s;
+    }
+
+    .rg-essence-link:hover::after {
+        width: 100%;
+    }
+}
+
+.rg-handmade {
+    width: 100%;
+    padding: 20px 0 55px;
+    background-color: #fff;
+    overflow: hidden;
+
+    .rg-handmade-container {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+
+    .rg-image-box {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+
+    .rg-left-image {
+        width: 330px;
+        height: 420px;
+        transform: rotate(-10deg);
+    }
+
+
+    .rg-center-image {
+        width: 425px;
+        height: 500px;
+
+        img {
+            object-position: center;
+        }
+    }
+
+    .rg-right-image {
+        width: 330px;
+        height: 420px;
+        transform: rotate(10deg);
+    }
+
+
+    .rg-image-title {
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        width: 100%;
+        text-align: center;
+        font-family: Georgia, serif;
+        font-size: 34px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+
+    .rg-handmade-features {
+        width: 100%;
+        max-width: 1150px;
+        margin: 45px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .rg-handmade-feature {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        p {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: #777;
+        }
+
+    }
+
+
+    .rg-feature-icon {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #dca900;
+        font-size: 28px;
+    }
+}
+
+
+.rg_shop_section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 70px 0 80px;
+    box-sizing: border-box;
+
+    .rg_categories_section {
+        width: 100%;
+    }
+
+    .rg_section_title {
+        margin: 0 0 46px;
+        text-align: center;
+
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #333;
+    }
+
+
+    .rg_categories_list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px;
+    }
+
+
+    .rg_category_item {
+        width: 100%;
+    }
+
+
+    .rg_category_image {
+        width: 100%;
+        height: 200px;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    .rg_category_image:hover img {
+        transform: scale(1.03);
+        transition: transform 0.4s ease;
+    }
+
+    .rg_category_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+
+    .rg_category_name {
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 20px;
+        line-height: 1.2;
+
+        color: #333;
+    }
+
+
+    .rg_category_count {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        color: #777;
+        white-space: nowrap;
+    }
+
+
+    .rg_trending_section {
+        margin-top: 80px;
+    }
+
+
+    .rg_trending_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+
+
+    .rg_trending_title {
+        margin: 0;
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 34px;
+        line-height: 1.2;
+
+        font-weight: 600;
+        color: #333;
+    }
+
+
+    .rg_view_collection {
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+
+        color: #333;
+        text-decoration: none;
+    }
+
+
+    .rg_view_collection:hover {
+        text-decoration: underline;
+    }
+
+    .rg_products_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+    }
+
+
+    .rg_product_card {
+        min-width: 0;
+    }
+
+
+    .rg_product_image {
+        position: relative;
+        width: 100%;
+        height: 370px;
+        background: #fafafa;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: contain;
+
+            display: block;
+        }
+    }
+
+    .rg_product_image:hover img {
+        transform: scale(1.03);
+        transition: transform 0.4s ease;
+    }
+
+    .rg_new_badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        z-index: 2;
+        padding: 5px 9px;
+        background: #dcae24;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 500;
+    }
+
+
+
+    .rg_product_details {
+        text-align: center;
+        padding-top: 25px;
+    }
+
+
+    .rg_product_name {
+        margin: 0 0 12px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #333;
+    }
+
+
+    .rg_product_rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 8px;
+
+        span {
+            font-size: 20px;
+            color: #dcae24;
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+
+    .rg_product_price {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+}
+
+.rg_promo_section {
+    width: 90%;
+    max-width: 1486px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 27px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    .rg_promo_card {
+        position: relative;
+
+        width: 100%;
+        height: 394px;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+
+    .rg_promo_image {
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+    }
+
+
+
+    .rg_promo_content {
+        position: absolute;
+
+        left: 54px;
+        top: 100px;
+
+        z-index: 2;
+
+        max-width: 470px;
+
+        box-sizing: border-box;
+    }
+
+
+    .rg_promo_label {
+        display: block;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #777;
+    }
+
+
+
+    .rg_promo_title {
+        display: inline-block;
+        margin: 0 0 18px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 26px;
+        line-height: 1.22;
+        font-weight: 600;
+        color: #303030;
+        cursor: pointer;
+        transition: text-decoration 0.2s ease;
+    }
+
+
+    .rg_promo_title:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 1px;
+    }
+
+
+    .rg_promo_price {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 53px;
+    }
+
+
+    .rg_current_price {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 600;
+        color: #d4aa27;
+    }
+
+
+    .rg_old_price {
+        font-family: Arial, sans-serif;
+
+        font-size: 17px;
+
+        color: #333;
+    }
+
+
+    .rg_discount {
+        font-family: Arial, sans-serif;
+
+        font-size: 14px;
+
+        color: #777;
+    }
+
+
+    .rg_shop_button {
+        display: inline-block;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 18px;
+        line-height: 1.2;
+
+        font-weight: 500;
+
+        color: #333;
+
+        text-decoration: none;
+
+        cursor: pointer;
+
+        transition:
+            color 0.2s ease,
+            text-decoration 0.2s ease;
+    }
+
+
+    .rg_shop_button:hover {
+        color: #d4aa27;
+
+        text-decoration: underline;
+
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+}
+
+.rg_featured_section {
+    width: 90%;
+    max-width: 1486px;
+
+    margin: 0 auto;
+    padding: 55px 0 70px;
+
+    box-sizing: border-box;
+
+
+    .rg_featured_header {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 35px;
+
+
+
+    }
+
+    .rg_featured_title {
+        margin: 0;
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 40px;
+        line-height: 1.2;
+
+        font-weight: 600;
+
+        color: #303030;
+    }
+
+
+    .rg_featured_view_all {
+        font-family: Arial, sans-serif;
+
+        font-size: 17px;
+        line-height: 1.2;
+
+        color: #333;
+
+        text-decoration: none;
+
+        transition:
+            color 0.2s ease,
+            text-decoration 0.2s ease;
+    }
+
+
+    .rg_featured_view_all:hover {
+        color: #d4aa27;
+
+        text-decoration: underline;
+
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+    }
+
+
+    .rg_featured_products {
+        width: 100%;
+
+        display: flex;
+
+        align-items: flex-start;
+
+        justify-content: space-between;
+
+        gap: 27px;
+
+        box-sizing: border-box;
+    }
+
+
+    .rg_featured_product {
+        flex: 1 1 0;
+
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .rg_featured_image_box {
+        position: relative;
+
+        width: 100%;
+        height: 394px;
+
+        background: #fafafa;
+
+        overflow: hidden;
+
+        box-sizing: border-box;
+    }
+
+
+    .rg_featured_image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+
+    }
+
+    .rg_featured_image_box:hover .rg_featured_image {
+        transform: scale(1.03);
+        transition: transform 0.4s ease;
+    }
+
+
+    .rg_featured_badge {
+        position: absolute;
+
+        top: 14px;
+        left: 14px;
+
+        z-index: 2;
+
+        padding: 5px 9px;
+
+        background: #d9ad2d;
+
+        color: #fff;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 13px;
+        line-height: 1;
+
+        font-weight: 500;
+    }
+
+
+
+    .rg_featured_info {
+        text-align: center;
+
+        padding-top: 25px;
+    }
+
+
+    .rg_featured_product_name {
+        margin: 0 0 10px;
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 25px;
+        line-height: 1.2;
+
+        font-weight: 400;
+
+        color: #333;
+    }
+
+
+    .rg_featured_rating {
+        margin-bottom: 10px;
+
+        font-family: Arial, sans-serif;
+
+        font-size: 21px;
+        line-height: 1;
+
+        letter-spacing: 1px;
+
+        color: #d9ad2d;
+    }
+
+
+
+    .rg_featured_price {
+        font-family: Arial, sans-serif;
+
+        font-size: 18px;
+        line-height: 1.2;
+
+        color: #333;
+    }
+
+
+
+    .rg_featured_product_name {
+        cursor: pointer;
+
+        transition: text-decoration 0.2s ease;
+    }
+
+
+    .rg_featured_product_name:hover {
+        text-decoration: underline;
+
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+    }
+}
+
+.rg-jewelry-story {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    overflow: hidden;
+    background: #f9f5f5;
+
+    .rg-story-content {
+        width: 50%;
+        padding: 78px 60px 50px 17.8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .rg-story-title {
+        margin: 0 0 64px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.1;
+        color: #292929;
+    }
+
+    .rg-story-stars {
+        margin-bottom: 14px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #d6a72c;
+    }
+
+    .rg-story-text {
+        max-width: 500px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        color: #3d3d3d;
+    }
+
+    .rg-story-user {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .rg-story-avatar {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .rg-user-info {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .rg-user-name {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 16px;
+        color: #353535;
+    }
+
+    .rg-user-status {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #777;
+    }
+
+
+    .rg-story-bottom {
+        width: 100%;
+        max-width: 510px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 36px;
+    }
+
+    .rg-story-line {
+        height: 1px;
+        flex: 1;
+        background: #e5dcd8;
+    }
+
+    .rg-story-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .rg-story-btn {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #eaded8;
+        background: #fff;
+        color: #333;
+        font-size: 34px;
+        font-weight: 300;
+        line-height: 40px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    .rg-story-btn:hover {
+        background: #f3eeee;
+    }
+
+
+    .rg-story-image {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+
+}
+
+.rg-ethical-banner {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    padding: 0 55px;
+    overflow: hidden;
+    background: #fff;
+
+    .rg-ethical-star {
+        flex-shrink: 0;
+
+        margin-right: 125px;
+
+        font-family: Arial, sans-serif;
+        font-size: 105px;
+        line-height: 1;
+
+        color: #f2e5db;
+    }
+
+    .rg-ethical-title {
+        margin: 0;
+        white-space: nowrap;
+        font-family: Arial, sans-serif;
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -3px;
+        color: #f2e5db;
+    }
+
+
+}
+
+
+.rg-collections {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 55px 0 45px;
+    display: flex;
+    align-items: stretch;
+    gap: 45px;
+
+
+    .rg-collections-info {
+        width: 270px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rg-collections-subtitle {
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #c69b20;
+    }
+
+    .rg-collections-title {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.15;
+        color: #2d2d2d;
+    }
+
+    .rg-collections-description {
+        margin: 22px 0 0;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        line-height: 23px;
+        color: #777;
+    }
+
+
+    .rg-collections-link {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+        margin-top: auto;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+        transition: color 0.25s ease;
+    }
+
+    .rg-collections-link::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+
+        width: 0;
+        height: 1px;
+
+        background: #d4aa25;
+
+        transition: width 0.3s ease;
+    }
+
+
+    .rg-collections-link:hover {
+        color: #d4aa25;
+    }
+
+    .rg-collections-link:hover::after {
+        width: 100%;
+    }
+
+
+    .rg-products {
+        flex: 1;
+
+        display: flex;
+        gap: 22px;
+    }
+
+    .rg-product {
+        flex: 1;
+        min-width: 0;
+
+        text-align: center;
+    }
+
+
+    .rg-product-image {
+        position: relative;
+
+        width: 100%;
+        height: 327px;
+
+        overflow: hidden;
+
+        background: #fafafa;
+    }
+
+    .rg-product-image img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+
+        transition: transform 0.4s ease;
+    }
+
+    .rg-product:hover .rg-product-image img {
+        transform: scale(1.03);
+    }
+
+
+    .rg-product-badge {
+        position: absolute;
+        top: 11px;
+        left: 12px;
+
+        z-index: 2;
+
+        padding: 3px 7px;
+
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+
+        color: #fff;
+        background: #d4af2a;
+    }
+
+
+    .rg-product-title {
+        margin: 26px 0 7px;
+
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20px;
+        font-weight: 500;
+
+        color: #333;
+    }
+
+
+    .rg-product-stars {
+        margin-bottom: 7px;
+
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        letter-spacing: 1px;
+
+        color: #d5a926;
+    }
+
+
+    .rg-product-price {
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+
+        color: #333;
+    }
+
+
+
+}
+
+.rg-journal {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 22px 0 45px;
+
+    .rg-journal-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rg-journal-subtitle {
+        display: block;
+        margin-bottom: 7px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #c49a24;
+    }
+
+    .rg-journal-title {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 29px;
+        font-weight: bold;
+        line-height: 1.3;
+        color: #333;
+        margin-bottom: 80px;
+    }
+
+    .rg-journal-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .rg-journal-card {
+        width: 350px;
+        flex-shrink: 0;
+    }
+
+
+    .rg-journal-image {
+        width: 350px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .rg-journal-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    .rg-journal-date {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        color: #777;
+    }
+
+    .rg-journal-date span {
+        font-size: 9px;
+    }
+
+
+    .rg-journal-card-title {
+        margin: 13px 0 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        color: #333;
+    }
+
+
+    .rg-journal-link {
+        position: relative;
+
+        display: inline-block;
+
+        margin-top: 16px;
+
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+
+        color: #333;
+        text-decoration: none;
+
+        transition: color 0.25s ease;
+    }
+
+
+    .rg-journal-link:hover {
+        color: #c9a126;
+    }
+
+
+    .rg-journal-link::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+
+        width: 0;
+        height: 1px;
+
+        background: #c9a126;
+
+        transition: width 0.25s ease;
+    }
+
+    .rg-journal-link:hover::after {
+        width: 100%;
+    }
+
+
+}
+
+
+.rg-newsletter-section {
+    width: 100%;
+    background-color: #ffffff;
+
+    .rg-newsletter-container {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 76px 0 80px;
+        border-top: 1px solid #f3dede;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+
+    .rg-newsletter-content {
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rg-newsletter-subtitle {
+        margin-bottom: 12px;
+        color: #c99816;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .rg-newsletter-title {
+        margin: 0 0 12px;
+        color: #292929;
+        font-family: Georgia, serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .rg-newsletter-text {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 0 24px;
+        color: #6b6b6b;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+
+    .rg-newsletter-form {
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        align-items: center;
+        background-color: #fafafa;
+    }
+
+    .rg-newsletter-input {
+        flex: 1;
+        height: 54px;
+        padding: 0 16px;
+        border: none;
+        outline: none;
+        background-color: #fafafa;
+        color: #292929;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    .rg-newsletter-input::placeholder {
+        color: #777777;
+    }
+
+    .rg-newsletter-button {
+        width: 124px;
+        height: 42px;
+        margin-right: 5px;
+        border: none;
+        background-color: #292929;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .rg-newsletter-button:hover {
+        background-color: #c99816;
+    }
+
+    .rg-newsletter-note {
+        margin: 14px 0 0;
+        color: #777777;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    .rg-newsletter-images {
+        width: 34%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transform: rotate(0deg);
+    }
+
+    .rg-newsletter-image {
+        display: block;
+        width: 170px;
+        height: 245px;
+        object-fit: cover;
+    }
+
+    .rg-newsletter-image-left {
+        transform: rotate(-6deg);
+    }
+
+    .rg-newsletter-image-right {
+        transform: rotate(-6deg);
+    }
+
+}
+
+.rg-partners-section {
+    width: 100%;
+    background-color: #faf5f6;
+
+    .rg-partners-container {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 68px 100px 62px;
+        box-sizing: border-box;
+
+        .rg-partners-title {
+            margin: 0 0 42px;
+
+            text-align: center;
+
+            color: #292929;
+
+            font-family: Georgia, serif;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .rg-partners-list {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 40px;
+        }
+
+        .rg-partner-item {
+            flex: 1;
+            min-width: 0;
+
+            height: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rg-partner-item img {
+            display: block;
+            width: auto;
+            height: 65px;
+            object-fit: contain;
+        }
+
+
+        .rg-partner-item:nth-child(1) img {
+            width: 145px;
+            height: auto;
+        }
+
+
+
+        .rg-partner-item:nth-child(2) img {
+            width: 130px;
+            height: auto;
+        }
+
+
+
+        .rg-partner-item:nth-child(3) img {
+            width: 90px;
+            height: auto;
+        }
+
+
+        .rg-partner-item:nth-child(4) img {
+            width: 80px;
+            height: auto;
+        }
+
+
+        .rg-partner-item:nth-child(5) img {
+            width: 80px;
+            height: auto;
+        }
+
+
+        .rg-partner-item:nth-child(6) img {
+            width: 80px;
+            height: auto;
+        }
+
+        .rg-partner-item:nth-child(7) img {
+            width: 80px;
+            height: auto;
+        }
+    }
+}
+
+/* main end */
+
+
+
+/* footer */
+
+.rg-footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #526174;
+    font-family: Arial, sans-serif;
+
+    .rg-footer-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 70px 40px 65px;
+        display: grid;
+        grid-template-columns:
+            1.2fr 1fr 1fr 1.25fr;
+        column-gap: 90px;
+    }
+
+
+    .rg-footer-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        color: #292929;
+        font-family: Georgia, serif;
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .rg-logo-icon {
+        color: #c9a227;
+        font-size: 25px;
+    }
+
+
+    .rg-footer-description {
+        max-width: 280px;
+
+        margin: 28px 0 20px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    .rg-footer-title {
+        margin: 0 0 24px;
+        color: #111111;
+        font-family: Georgia, serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .rg-social-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    .rg-social-link {
+        width: 36px;
+        height: 36px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background-color: #f8f8f8;
+        color: #111111;
+
+        text-decoration: none;
+
+        transition: 0.3s;
+    }
+
+    .rg-social-link:hover {
+        background-color: #c9a227;
+        color: #ffffff;
+    }
+
+
+    .rg-footer-list {
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+    }
+
+    .rg-footer-list li {
+        margin-bottom: 14px;
+    }
+
+    .rg-footer-list a {
+        color: #526174;
+
+        text-decoration: none;
+
+        font-size: 16px;
+
+        transition: 0.3s;
+    }
+
+    .rg-footer-list a:hover {
+        color: #c9a227;
+    }
+
+
+
+    .rg-footer-contact {
+        margin: 0;
+
+        font-style: normal;
+    }
+
+    .rg-footer-contact p {
+        margin: 0 0 12px;
+
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .rg-footer-contact strong {
+        color: #111111;
+        font-weight: 500;
+    }
+
+    .rg-footer-contact a {
+        color: #526174;
+        text-decoration: none;
+    }
+
+    .rg-footer-contact a:hover {
+        color: #c9a227;
+    }
+
+
+    .rg-footer-bottom {
+        max-width: 1620px;
+        margin: 0 auto;
+
+        padding: 25px 40px;
+
+        border-top: 1px solid #dddddd;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .rg-copyright {
+        margin: 0;
+
+        color: #607086;
+        font-size: 16px;
+    }
+
+    .rg-copyright a {
+        color: #c9a227;
+        text-decoration: none;
+    }
+
+
+
+    .rg-payment-methods {
+        display: flex;
+        align-items: center;
+        margin-right: 70px;
+
+    }
+
+    .rg-payment {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 7px;
+        font-weight: 700;
     }
 }
